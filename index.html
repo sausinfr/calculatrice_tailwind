@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+          .btn {
+            @apply rounded-md py-2 px-4;
+          }
+          .btn-large {
+            @apply rounded-md py-2 col-span-2
+          }
+        }
+      </style>
+</head>
+<body class="flex h-screen justify-center items-center bg-slate-800">
+    <div class="bg-slate-400 max-w-lg p-8 text-3xl rounded-md">
+        <p id="result" class="bg-slate-700 text-white text-right p-4 mb-8 rounded-md">0</p>
+        <div class="grid grid-cols-4 gap-5 text-gray-500">
+            <button class="bg-amber-50 btn" value="7">7</button>
+            <button class="bg-amber-50 btn" value="8">8</button>
+            <button class="bg-amber-50 btn" value="9">9</button>
+            <button class="bg-slate-700 text-white btn" value="del">DEL</button>
+            <button class="bg-amber-50 btn" value="4">4</button>
+            <button class="bg-amber-50 btn" value="5">5</button>
+            <button class="bg-amber-50 btn" value="6">6</button>
+            <button class="bg-amber-50 btn" value="+">+</button>
+            <button class="bg-amber-50 btn" value="1">1</button>
+            <button class="bg-amber-50 btn" value="2">2</button>
+            <button class="bg-amber-50 btn" value="3">3</button>
+            <button class="bg-amber-50 btn" value="-">-</button>
+            <button class="bg-amber-50 btn" value=".">.</button>
+            <button class="bg-amber-50 btn" value="0">0</button>
+            <button class="bg-amber-50 btn" value="/">/</button>
+            <button class="bg-amber-50 btn" value="*">x</button>
+            <button class="bg-slate-700 btn-large text-white" value="reset">RESET</button>
+            <button class="bg-red-500 btn-large text-white" value="=">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
